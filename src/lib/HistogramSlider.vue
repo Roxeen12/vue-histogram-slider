@@ -234,6 +234,7 @@ export default {
   },
 
   mounted() {
+    console.log(this.data)
     this.createHistogram()
   },
 
