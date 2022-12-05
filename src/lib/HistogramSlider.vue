@@ -37,10 +37,10 @@ export default {
   },
   watch: {
     data() {
-      // const bars = document.querySelectorAll('[class*="vue-histogram-slider-bar-"]')
-      // bars.forEach((bar) => {
-      //   bar.remove()
-      // })
+      const bars = document.querySelectorAll('[class*="vue-histogram-slider-bar-"]')
+      bars.forEach(bar => {
+        bar.remove()
+      })
       this.createHistogram()
     }
   },
