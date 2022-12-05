@@ -1,5 +1,5 @@
 <template>
-  <div :style="style" class="vue-histogram-slider-wrapper">
+  <div :style="style" class="vue-histogram-slider-wrapper" v-if="data.length > 0">
     <svg :id="id" class="vue-histogram-view">
       <defs>
         <clipPath :id="clipId">
@@ -37,10 +37,10 @@ export default {
   },
   watch: {
     data() {
-      const bars = document.querySelectorAll('[class*="vue-histogram-slider-bar-"]')
-      bars.forEach(bar => {
-        bar.remove()
-      })
+      // const bars = document.querySelectorAll('[class*="vue-histogram-slider-bar-"]')
+      // bars.forEach((bar) => {
+      //   bar.remove()
+      // })
       this.createHistogram()
     }
   },
