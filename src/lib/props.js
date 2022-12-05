@@ -1,4 +1,8 @@
 export default {
+  loadCounter: {
+    type: Number,
+    required: true
+  },
   data: {
     type: Array,
     required: true
