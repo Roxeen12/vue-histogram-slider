@@ -41,6 +41,7 @@ export default {
       bars.forEach(bar => {
         bar.remove()
       })
+      console.log(bars)
       this.createHistogram()
     }
   },
